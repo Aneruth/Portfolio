@@ -74,7 +74,7 @@ p {
 
 .flex-center {
   width: 100%;
-  min-height: 50vh;
+  min-height: 1vh;
   background: black;
   display: -webkit-box;
   display: -ms-flexbox;
