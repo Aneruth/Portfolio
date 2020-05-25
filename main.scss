@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@500&display=swap');
 
+html {
+  height: 100%;
+  font-family: 'Montserrat';
+
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: rgb(0, 0, 0);
+  --color-text: #333333;
+}
+
+html[data-theme='dark'] {
+  --bg: #000000;
+  --bg-panel: #434343;
+  --color-headings: rgb(182, 185, 189);
+  --color-text: #B5B5B5;
+}
+
 body{
   padding: 40px;
-  background:rgb(0, 0, 0);  
+  background:var(--bg);  
 }
 
 a{
@@ -19,25 +36,25 @@ a:link{
 h2{
   font-variant-caps: all-petite-caps;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 38px;
-  color: rgb(255, 255, 255);
+  font-size: 28px;
+  color: var(--color-headings);
   padding: 30px;
   margin-top: 0.2px;
 }
 h3{
-  font-size: 38px;
-  color: rgb(255, 255, 255);
+  font-size: 28px;
+  color: var(--color-headings);
   padding: 30px;
   margin-top: 50px;
 }
 
 p {
-  border-right: solid 5px rgb(255, 255, 255);
+  border-right: solid 5px var(--color-text);
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
   font-size: 60px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text);
   margin: 0 auto;
 }
 
@@ -66,9 +83,9 @@ $blueColor:rgba(33,150,243,1);
 
 .flex-center {
   width: 100%;
-  min-height: 1vh;
+  min-height: 20vh;
   
-  background: rgb(0, 0, 0);
+  background: var(--bg);
   
   display: -webkit-box;
   display: -webkit-flex;
@@ -88,7 +105,7 @@ $blueColor:rgba(33,150,243,1);
   padding: 10px;
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
-  color: rgb(255, 255, 255);
+  color: var(--color-text);
   &:hover {
     -webkit-animation: icon3d 200ms infinite;
           animation: icon3d 200ms infinite;
@@ -112,105 +129,52 @@ $blueColor:rgba(33,150,243,1);
     text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
   }
 }
-
-//Light Mode
-:root {
-  --background: #000;
-  --text: #FFF;
-  --highlight: rgb(248, 6, 6);
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: rgb(0, 0, 0);
+	float: right;
+	border-radius: 100px;
+	position: relative;
 }
 
-.theme-switch {
-  --background: #FFF;
-  --text: #000;
-  color: var(--text);
-  width: 70px;
-  height: 30px;
-  background: var(--highlight);
-  border-radius: 50px;
-  position: relative;
-
-  .switch {
-    background: white;
-    width: 24px;
-    height: 24px;
-    background: var(--background);
-    border-radius: 100%;
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    transition: 0.2s all ease;
-  }
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
 }
 
-.light-theme {
-  --background: #FFF;
-  --text: #000;
-  background: var(--background);
-
-  .theme-switch {
-    background: var(--text);
-
-    .switch {
-      transform: translateX(37px);
-    }
-  }
-  a {
-    color: var(--text); 
-  }
+input:checked + label {
+	background: var(--color-headings);
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
 }
 
-ul {
-  display: flex;
-  list-style-type: none;
-  a {
-    margin: 10px 30px;
-    position: relative;
-    color: var(--text);
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
+label:active:after {
+	width: 45px;
+}
 
-    &:before {
-      position: absolute;
-      bottom: -2px;
-      content: '';
-      width: 100%;
-      height: 3px;
-      background: var(--highlight);
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-
-    &:hover {
-      &:before {
-        opacity: 1;
-        transition: 0.5s transform ease, 0.8s opacity ease;
-        transform: translateX(0);
-      }
-    }
-  }
-
-  .active {
-    color: var(--highlight);
-
-    &:hover {
-      &:before {
-        opacity: 0;
-      }
-    }
-  }
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
