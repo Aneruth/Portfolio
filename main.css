@@ -4,6 +4,18 @@ body {
   background: black;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 h2 {
   font-variant-caps: all-petite-caps;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,7 +37,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   font-family: 'Source Code Pro', monospace;
-  font-size: 38px;
+  font-size: 60px;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
 }
@@ -42,7 +54,7 @@ p {
     width: 0;
   }
   to {
-    width: 502px;
+    width: 801px;
   }
 }
 @keyframes animated-text {
@@ -50,7 +62,7 @@ p {
     width: 0;
   }
   to {
-    width: 502px;
+    width: 801px;
   }
 }
 
