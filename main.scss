@@ -17,6 +17,29 @@ html[data-theme='dark'] {
   --color-text: rgb(255, 0, 0);
 }
 
+:root {
+  --animation-delay: 75ms;
+}
+
+span {
+  opacity: 0;
+  animation-name: typewriter;
+  animation-fill-mode: forwards;
+  animation-duration: 0s;
+  animation-delay: calc(var(--animation-order) * var(--animation-delay));
+  
+}
+
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 body{
   padding: 40px;
   background:var(--bg);  
@@ -56,6 +79,9 @@ p {
   font-size: 60px;
   color: var(--color-text);
   margin: 0 auto;
+  border-right: .1em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
 }
 
 /* Animation */
@@ -143,7 +169,7 @@ label {
 	background: rgb(0, 0, 0);
 	float: right;
 	border-radius: 100px;
-	position: relative;
+  position: relative;
 }
 
 label:after {
@@ -177,54 +203,4 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
-}
-
-.demo-content {
-  position: relative;
-  padding: 70px 20px;
-  height: 1500px;
-}
-.text {
-  display: block;
-  margin: 10px 0;
-  color: #6c6f73;
-  text-transform: uppercase;
-  font-family: "Roboto", Arial, sans-serif;
-}
-.ion {
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  line-height: 1.8;
-  border-radius: 50%;
-  border: 1px solid #CCD1D9;
-  margin-right: auto;
-  margin-left: auto;
-}
-.icon {
-  color: #434A54;
-  text-decoration: none;
-  display: block;
-  margin-right: 5px;
-  text-align: center;
-  width: 120px;
-  position: absolute;
-  left: 50%;
-  margin-left: -60px;
-  font-size: 11px;
-}
-.down {
-    top: 10px;
-    margin-top: 20px;
-}
-.up {
-    bottom: 10px;
-    margin-bottom: 20px;
-}
-.ion {
-  background-color: #fff;
-  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.1);
 }
