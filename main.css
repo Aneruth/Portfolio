@@ -15,40 +15,6 @@ html[data-theme='dark'] {
   --color-text: rgb(255, 0, 0);
 }
 
-:root {
-  --animation-delay: 75ms;
-}
-
-span {
-  opacity: 0;
-  -webkit-animation-name: typewriter;
-          animation-name: typewriter;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 0s;
-          animation-duration: 0s;
-  -webkit-animation-delay: calc(var(--animation-order) * var(--animation-delay));
-          animation-delay: calc(var(--animation-order) * var(--animation-delay));
-}
-
-@-webkit-keyframes typewriter {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes typewriter {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 body {
   padding: 40px;
   background: var(--bg);
