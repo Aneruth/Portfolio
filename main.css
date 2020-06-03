@@ -225,7 +225,7 @@ html.transition *:after {
   width: 95%;
   height: auto;
   margin: 40px auto;
-  background-color: #fff;
+  background: var(--bg);
   //border: 1px solid #cdcdcd;
   padding: 10px;
   border-radius:20px;
