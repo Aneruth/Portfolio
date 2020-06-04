@@ -242,7 +242,7 @@ html.transition *:after {
   margin: 20px auto;
 }
 #Skill-HTML {
-  width: 100%;
+  width: 82%;
   animation: Animate-HTML 4s;
   -webkit-animation: Animate-HTML 4s;
   -moz-animation: Animate-HTML 4s;
@@ -256,26 +256,62 @@ html.transition *:after {
   width: 10px;
 }
 to {
-  width: 100%}
+  width: 82%}
 }@-webkit-keyframes Animate-HTML {
   from {
   width: 10px;
 }
 to {
-  width: 100%}
+  width: 82%}
 }@-moz-keyframes Animate-HTML {
   from {
   width: 10px;
 }
 to {
-  width: 100%}
+  width: 82%}
 }@-o-keyframes Animate-HTML {
   from {
   width: 10px;
 }
 to {
-  width: 100%}
-}#Skill-CSS {
+  width: 82%}
+}
+#Skill-CPLUS {
+  width: 82%;
+  animation: Animate-C++ 4s;
+  -webkit-animation: Animate-C++ 4s;
+  -moz-animation: Animate-C++ 4s;
+  -o-animation: Animate-C++ 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #ea8564;
+}
+@keyframes Animate-CPLUS {
+  from {
+  width: 10px;
+}
+to {
+  width: 82%}
+}@-webkit-keyframes Animate-CPLUS {
+  from {
+  width: 10px;
+}
+to {
+  width: 82%}
+}@-moz-keyframes Animate-CPLUS {
+  from {
+  width: 10px;
+}
+to {
+  width: 82%}
+}@-o-keyframes Animate-CPLUS {
+  from {
+  width: 10px;
+}
+to {
+  width: 82%}
+}
+#Skill-CSS {
   animation: Animate-CSS 5s;
   -webkit-animation: Animate-CSS 5s;
   -moz-animation: Animate-CSS 5s;
@@ -416,41 +452,41 @@ to {
   -webkit-animation: Animate-C 4s;
   -moz-animation: Animate-C 4s;
   -o-animation: Animate-C 4s;
-  width: 30%;
+  width: 40%;
   height: 50px;
   position: absolute;
-  background-color: #970cc1;
+  background-color: rgba(248, 155, 119, 0.959);
 }
 @keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 40%}
 }@-webkit-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 40%}
 }@-moz-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 40%}
 }@-o-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 40%}
 }#Skill-JAVA {
   animation: Animate-JAVA 4s;
   -webkit-animation: Animate-JAVA 4s;
   -moz-animation: Animate-JAVA 4s;
   -o-animation: Animate-JAVA 4s;
-  width: 25%;
+  width: 45%;
   height: 50px;
   position: absolute;
   background-color: #8e930c;
@@ -460,25 +496,25 @@ to {
   width: 10px;
 }
 to {
-  width: 25%}
+  width: 45%}
 }@-webkit-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 25%}
+  width: 45%}
 }@-moz-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 25%}
+  width: 45%}
 }@-o-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 25%}
+  width: 45%}
 }#Skill-PHP {
   animation: Animate-PHP 4s;
   -webkit-animation: Animate-PHP 4s;
@@ -547,41 +583,42 @@ to {
 }
 to {
   width: 80%}
-}#Skill-VBNET {
-  animation: Animate-VBNET 3s;
-  -webkit-animation: Animate-VBNET 3s;
-  -moz-animation: Animate-VBNET 3s;
-  -o-animation: Animate-VBNET 3s;
+}#Skill-PYTHON {
+  animation: Animate-PYTHON 3s;
+  -webkit-animation: Animate-PYTHON 3s;
+  -moz-animation: Animate-PYTHON 3s;
+  -o-animation: Animate-PYTHON 3s;
   width: 80%;
   height: 50px;
   position: absolute;
   background-color: #f8a51e;
 }
-@keyframes Animate-VBNET {
+@keyframes Animate-PYTHON {
   from {
   width: 10px;
 }
 to {
   width: 80%}
-}@-webkit-keyframes Animate-VBNET {
+}@-webkit-keyframes Animate-PYTHON {
   from {
   width: 10px;
 }
 to {
   width: 80%}
-}@-moz-keyframes Animate-VBNET {
+}@-moz-keyframes Animate-PYTHON {
   from {
   width: 10px;
 }
 to {
-  width: 35%}
-}@-o-keyframes Animate-VBNET {
+  width: 80%}
+}@-o-keyframes Animate-PYTHON {
   from {
   width: 10px;
 }
 to {
-  width: 35%}
-}.Skill-Area {
+  width: 80%}
+}
+.Skill-Area {
   z-index: 1;
   float: left;
   //position: absolute;
@@ -603,4 +640,53 @@ to {
   //font-family: Lato-Regular, sans-serif;
   font-size: 18px;
 }
+ul { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  color: var(--color-text);
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+  top: -200px;
+  color: var(--color-text);
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: var(--color-text);
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
 /*# sourceMappingURL=main.css.map */
