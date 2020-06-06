@@ -31,7 +31,9 @@ a:hover {
 a:link {
   text-decoration: none;
 }
-
+h1 {
+  font-family: cursive;
+}
 h2 {
   font-variant-caps: all-petite-caps;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -276,41 +278,7 @@ to {
 to {
   width: 82%}
 }
-#Skill-CPLUS {
-  width: 82%;
-  animation: Animate-C++ 4s;
-  -webkit-animation: Animate-C++ 4s;
-  -moz-animation: Animate-C++ 4s;
-  -o-animation: Animate-C++ 4s;
-  height: 50px;
-  position: absolute;
-  background-color: #ea8564;
-}
-@keyframes Animate-CPLUS {
-  from {
-  width: 10px;
-}
-to {
-  width: 82%}
-}@-webkit-keyframes Animate-CPLUS {
-  from {
-  width: 10px;
-}
-to {
-  width: 82%}
-}@-moz-keyframes Animate-CPLUS {
-  from {
-  width: 10px;
-}
-to {
-  width: 82%}
-}@-o-keyframes Animate-CPLUS {
-  from {
-  width: 10px;
-}
-to {
-  width: 82%}
-}
+
 #Skill-CSS {
   animation: Animate-CSS 5s;
   -webkit-animation: Animate-CSS 5s;
@@ -345,40 +313,41 @@ to {
 }
 to {
   width: 70%}
-}#Skill-jQuery {
-  animation: Animate-jQuery 5s;
-  -webkit-animation: Animate-jQuery 5s;
-  -moz-animation: Animate-jQuery 5s;
-  -o-animation: Animate-jQuery 5s;
-  width: 40%;
+}
+#Skill-CPLUS {
+  animation: Animate-CPLUS 5s;
+  -webkit-animation: Animate-CPLUS 5s;
+  -moz-animation: Animate-CPLUS 5s;
+  -o-animation: Animate-CPLUS 5s;
+  width: 82%;
   height: 50px;
   position: absolute;
   background-color: #99856d;
 }
-@keyframes Animate-jQuery {
+@keyframes Animate-CPLUS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
-}@-webkit-keyframes Animate-jQuery {
+  width: 82%}
+}@-webkit-keyframes Animate-CPLUS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
-}@-moz-keyframes Animate-jQuery {
+  width: 82%}
+}@-moz-keyframes Animate-CPLUS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
-}@-o-keyframes Animate-jQuery {
+  width: 82%}
+}@-o-keyframes Animate-CPLUS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 82%}
 }#Skill-JS {
   animation: Animate-JS 4s;
   -webkit-animation: Animate-JS 4s;
@@ -583,7 +552,8 @@ to {
 }
 to {
   width: 80%}
-}#Skill-PYTHON {
+}
+#Skill-PYTHON {
   animation: Animate-PYTHON 3s;
   -webkit-animation: Animate-PYTHON 3s;
   -moz-animation: Animate-PYTHON 3s;
@@ -621,12 +591,10 @@ to {
 .Skill-Area {
   z-index: 1;
   float: left;
-  //position: absolute;
   margin-top: 15px;
   margin-left: 15px;
   text-shadow: none;
   color: #fff;
-  //font-family: Lato-Regular, sans-serif;
   font-size: 18px;
 }
 .PercentText {
@@ -637,56 +605,60 @@ to {
   float: right;
   text-shadow: none;
   color: #fff;
-  //font-family: Lato-Regular, sans-serif;
   font-size: 18px;
 }
-ul { 
-  margin: 150px auto 0; 
-  padding: 0; 
-  list-style: none; 
-  display: table;
-  width: 600px;
-  color: var(--color-text);
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-li { 
-  display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
-  top: -200px;
-  color: var(--color-text);
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  color: var(--color-text);
-  display: inline-block;
-  padding: 15px 20px;
+
+.card__box{
   position: relative;
-}
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  background: var(--bg);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  transition: all .4s ease;
 
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+.img__header{
+  font-size: 24px;
+  line-height: 48px;
+
 }
-@media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
+.img__text{
+  font-family: popins;
+  padding-top: 20px;
+  color: var(--color-headings);
+}
+.img__text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px; 
+}
+
+.card__box:hover{
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-3px);
 }
 
 
