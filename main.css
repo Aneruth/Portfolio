@@ -221,7 +221,7 @@ html.transition *:after {
   width: 90%;
   height: 50px;
   position: relative;
-  background: rgba(17, 17, 17, .3);
+  background:var(--bg);
   margin: 20px auto;
 }
 #Skill-HTML {
