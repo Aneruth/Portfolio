@@ -66,8 +66,8 @@ p {
 
 /* Animation */
 p {
-  -webkit-animation: animated-text 5s linear 1s 1 normal both, animated-cursor 700ms linear infinite;
-          animation: animated-text 5s linear 1s 1 normal both, animated-cursor 700ms linear infinite;
+  -webkit-animation: animated-text 5s linear 1s 1 normal both;
+          animation: animated-text 5s linear 1s 1 normal both;
 }
 
 /* text animation */
@@ -87,25 +87,6 @@ p {
     width: 801px;
   }
 }
-
-/* cursor animations */
-@-webkit-keyframes animated-cursor {
-  from {
-    border-right-color: white;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes animated-cursor {
-  from {
-    border-right-color: white;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
 .flex-center {
   width: 100%;
   min-height: 20vh;
