@@ -36,7 +36,7 @@ h1 {
 }
 h2 {
   font-variant-caps: all-petite-caps;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace,cursive;
   font-size: 28px;
   color: var(--color-headings);
   padding: 30px;
@@ -48,6 +48,7 @@ h3 {
   color: var(--color-headings);
   padding: 30px;
   margin-top: 50px;
+  font-family: fantasy;
 }
 
 p {
