@@ -9,8 +9,8 @@ html {
 }
 
 html[data-theme='dark'] {
-  --bg: #1f1e1e;
-  --bg-panel: #1f1b1b;
+  --bg: #000000;
+  --bg-panel: #000000;
   --color-headings: rgb(221, 221, 223);
   --color-text: rgb(255, 0, 0);
 }
@@ -720,7 +720,7 @@ a {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 150px;
   background-color: black;
   color: #fff;
   text-align: center;
