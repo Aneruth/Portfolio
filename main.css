@@ -9,8 +9,8 @@ html {
 }
 
 html[data-theme='dark'] {
-  --bg: #000000;
-  --bg-panel: #434343;
+  --bg: #1f1e1e;
+  --bg-panel: #1f1b1b;
   --color-headings: rgb(221, 221, 223);
   --color-text: rgb(255, 0, 0);
 }
@@ -210,7 +210,6 @@ html.transition *:after {
   height: auto;
   margin: 40px auto;
   background: var(--bg);
-  //border: 1px solid #cdcdcd;
   padding: 10px;
   border-radius:20px;
   -o-border-radius:20px;
@@ -711,6 +710,30 @@ a {
 
 #button-3:hover a {
   color: #2D3142;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.css.map */
