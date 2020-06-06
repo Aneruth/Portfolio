@@ -206,7 +206,7 @@ html.transition *:after {
 #SkillBox {
   font-size: 20px;
   font-family: 'Indie Flower', cursive;
-  width: 95%;
+  /*width: 95%;*/
   height: auto;
   margin: 40px auto;
   background: var(--bg);
