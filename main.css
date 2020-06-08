@@ -56,9 +56,9 @@ p {
   white-space: nowrap;
   overflow: hidden;
   font-family: cursive;
-  font-size: 60px;
+  font-size: 65px;
   color: var(--color-text);
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   border-right: .1em solid transparent;
   /* The typwriter cursor */
   white-space: nowrap;
