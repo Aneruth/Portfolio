@@ -10,6 +10,10 @@
         
 </head>
 <body>
+		<body onload="myFunction()" style="margin:0;">
+			<div id="loader"></div>
+	
+<div id="fullDiv" style="justify-content: initial; display: none;" class="animate-bottom">			
 	<div class="tooltip"><span class="tooltiptext" style="margin-left: 1600px;top: 9px;">Slide me to turn on/off Dark Mode</span>
 		<input type="checkbox" id="switch" name="theme" /> <label for="switch" style="margin-left: 1700px;top: 70px;">Toggle</label></div>
   <center><p style="padding-left: 80px;margin-right: 500px;margin-left: 415px;">Aneruth Mohanasundaram</p></center>
@@ -17,7 +21,7 @@
 
 			<center><h1 style= "color: var(--color-text);">About Me</h1></center>
 
-<div class="text" style="justify-content: initial;">
+<div class="text">
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus voluptas quisquam ratione quos dolor blanditiis, iste praesentium aliquid quaerat quas officiis animi iure tenetur eligendi veniam culpa aspernatur! Error.
     Lorem ipsum dolor sit amet consectetr adipisicing elit. Repudiandae necessitatibus voluptas quisquam ratione quos dolor blanditiis, iste praesentium aliquid quaerat quas officiis animi iure tenetur eligendi veniam culpa aspernatur! Error.
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus voluptas quisquam ratione quos dolor blanditiis, iste praesentium aliquid quaerat quas officiis animi iure tenetur eligendi veniam culpa aspernatur! Error.
@@ -173,12 +177,14 @@
 			  </div>
 			</div>
 		  </div>
-<div class="flex-center">
+<!-- <div class="flex-center">
     <a href="https://github.com/Aneruth" class="fa fa-github fa-4x icon-3d"></a>
     <a href="https://www.linkedin.com/in/aneruth-mohanasundaram-01352713b/" class="fa fa-linkedin fa-4x icon-3d"></a>
     <a href="https://www.instagram.com/aneruth_mohanasundaram/?hl=en" class="fa fa-instagram fa-4x icon-3d"></a>
-  </div>
-
+  </div> -->
+</div>
+</div>
+</div>
  <script>
       var checkbox = document.querySelector('input[name=theme]');
 
@@ -198,6 +204,18 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 1000)
 }
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("fullDiv").style.display = "block";
+}
+
 </script>
 </body>
 </html>
