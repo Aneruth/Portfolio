@@ -774,16 +774,6 @@ a {
   color: var(--color-headings);
 }
 
-.place {
-  margin-left: 62px;
-  color: var(--color-headings);
-}
-
-.phone {
-  margin-left: 56px;
-  color: var(--color-headings);
-}
-
 .gmail {
   margin-left: 53px;
   color: var(--color-headings);
