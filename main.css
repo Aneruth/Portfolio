@@ -398,7 +398,7 @@ to {
   -webkit-animation: Animate-C 4s;
   -moz-animation: Animate-C 4s;
   -o-animation: Animate-C 4s;
-  width: 40%;
+  width: 65%;
   height: 50px;
   position: absolute;
   background-color: rgba(248, 155, 119, 0.959);
@@ -408,31 +408,31 @@ to {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 }@-webkit-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 }@-moz-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 }@-o-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 }#Skill-JAVA {
   animation: Animate-JAVA 4s;
   -webkit-animation: Animate-JAVA 4s;
   -moz-animation: Animate-JAVA 4s;
   -o-animation: Animate-JAVA 4s;
-  width: 45%;
+  width: 65%;
   height: 50px;
   position: absolute;
   background-color: #8e930c;
@@ -442,60 +442,27 @@ to {
   width: 10px;
 }
 to {
-  width: 45%}
+  width: 65%}
 }@-webkit-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 45%}
+  width: 65%}
 }@-moz-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 45%}
+  width: 65%}
 }@-o-keyframes Animate-JAVA {
   from {
   width: 10px;
 }
 to {
-  width: 45%}
-}#Skill-PHP {
-  animation: Animate-PHP 4s;
-  -webkit-animation: Animate-PHP 4s;
-  -moz-animation: Animate-PHP 4s;
-  -o-animation: Animate-PHP 4s;
-  width: 50%;
-  height: 50px;
-  position: absolute;
-  background-color: #5A69A6;
+  width: 65%}
 }
-@keyframes Animate-PHP {
-  from {
-  width: 10px;
-}
-to {
-  width: 50%}
-}@-webkit-keyframes Animate-PHP {
-  from {
-  width: 10px;
-}
-to {
-  width: 50%}
-}@-moz-keyframes Animate-PHP {
-  from {
-  width: 10px;
-}
-to {
-  width: 50%}
-}@-o-keyframes Animate-PHP {
-  from {
-  width: 10px;
-}
-to {
-  width: 50%}
-}#Skill-SQL {
+#Skill-SQL {
   animation: Animate-SQL 4s;
   -webkit-animation: Animate-SQL 4s;
   -moz-animation: Animate-SQL 4s;
