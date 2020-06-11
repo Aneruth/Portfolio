@@ -792,7 +792,7 @@ a {
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
   color: var(--color-text);
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   text-align: center;
 }
 /* Begin Media Queries*/
