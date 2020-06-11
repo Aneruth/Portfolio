@@ -788,5 +788,167 @@ a {
   to{ bottom:0; opacity:1 }
 }
 
+/* Contact */
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+  color: var(--color-headings);
+}
+
+.list-item {
+  line-height: 4;
+  color:black;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: var(--color-headings);
+}
+
+.place {
+  margin-left: 62px;
+  color: var(--color-headings);
+}
+
+.phone {
+  margin-left: 56px;
+  color: var(--color-headings);
+}
+
+.gmail {
+  margin-left: 53px;
+  color: var(--color-headings);
+}
+
+.contact-text a {
+  color: var(--color-headings);
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: var(--color-headings);
+  text-decoration: none;
+}
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: var(--color-text);
+  letter-spacing: 5px;
+  text-align: center;
+}
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+  #contact {
+      height: 1000px;
+  }
+.direct-contact-container, .form-horizontal {
+  float: none;
+  margin: 10px auto;
+}  
+.direct-contact-container {
+  margin-top: 60px;
+  max-width: 300px;
+}    
+.social-media-list li {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+.social-media-list li:after {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+}
+
+@media screen and (max-width: 569px) {
+.form-wrapper {
+  float: none;
+  margin: 0 auto;
+}  
+.form-control, textarea {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.name, .email, textarea {
+  width: 280px;
+} 
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+/*Mobile version*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
