@@ -800,13 +800,11 @@ a {
   #contact {
       height: 1000px;
   }
-.direct-contact-container, .form-horizontal {
-  float: none;
-  margin: 10px auto;
-}  
 .direct-contact-container {
   margin-top: 60px;
   max-width: 300px;
+  float: none;
+  margin: 10px auto;
 }    
 .social-media-list li {
   height: 60px;
