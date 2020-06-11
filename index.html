@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" oncontextmenu="return false">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
 		<body onload="myFunction()" style="margin:0;">
 			<div id="loader"></div>
 	
@@ -231,7 +231,24 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("fullDiv").style.display = "block";
 }
-
+$(document).keydown(function(e){
+        if(e.which === 123){
+           return false;
+        }
+    });
+	var currentHtmlContent;
+var element = new Image();
+var elementWithHiddenContent = document.querySelector("#element-to-hide");
+var innerHtml = elementWithHiddenContent.innerHTML;
+element.__defineGetter__("id", function() {
+    currentHtmlContent= "";
+});
+setInterval(function() {
+    currentHtmlContent= innerHtml;
+    console.log(element);
+    console.clear(); 
+    elementWithHiddenContent.innerHTML = currentHtmlContent;
+}, 1000);	
 </script>
 </body>
 </html>
