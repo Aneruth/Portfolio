@@ -6,6 +6,7 @@ html {
   --bg-panel: #EBEBEB;
   --color-headings: rgb(0, 0, 0);
   --color-text: #333333;
+  --color-card: rgb(255,0,0);
 }
 
 html[data-theme='dark'] {
@@ -13,6 +14,7 @@ html[data-theme='dark'] {
   --bg-panel: #000000;
   --color-headings: rgb(221, 221, 223);
   --color-text: rgb(255, 0, 0);
+  --color-card: rgb(163, 3, 3);
 }
 
 body {
@@ -194,8 +196,8 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  -webkit-transition: all 750ms !important;
-  transition: all 750ms !important;
+  -webkit-transition: all 500ms !important;
+  transition: all 500ms !important;
   -webkit-transition-delay: 0 !important;
           transition-delay: 0 !important;
 }
@@ -567,7 +569,7 @@ to {
 }
 
 .card__box:hover{
-  background-color: red;
+  background-color: var(--color-card);
   color: #fff;
   cursor: auto;
   transform: translateY(-3px);

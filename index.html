@@ -202,15 +202,28 @@
  <footer class="copyright" style="padding-left: 35px;">&copy; Aneruth Mohanasundaram</footer> 
 </div>
  <script>
-      var checkbox = document.querySelector('input[name=theme]');
+	 function arunDaniel(){
+		if(sessionStorage.getItem("theme")=="dark"){
+			document.documentElement.setAttribute('data-theme', 'dark');
+		}		
+		 else {
+			document.documentElement.setAttribute('data-theme', 'light');
+		 }
+	 }
+
+
+      
+	var checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
     if(this.checked) {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark')
+		sessionStorage.setItem("theme","dark")
     } else {
         trans()
         document.documentElement.setAttribute('data-theme', 'light')
+		sessionStorage.setItem("theme","light")
     }
 })
 
@@ -225,6 +238,8 @@ var myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 2500);
+
+  arunDaniel();
 }
 
 function showPage() {
