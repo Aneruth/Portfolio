@@ -330,7 +330,7 @@ to {
   -webkit-animation: Animate-JS 4s;
   -moz-animation: Animate-JS 4s;
   -o-animation: Animate-JS 4s;
-  width: 65%;
+  width: 69%;
   height: 50px;
   position: absolute;
   background-color: #c44e45;
@@ -340,65 +340,32 @@ to {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-webkit-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-moz-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-o-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
-}#Skill-XML {
-  animation: Animate-XML 4s;
-  -webkit-animation: Animate-XML 4s;
-  -moz-animation: Animate-XML 4s;
-  -o-animation: Animate-XML 4s;
-  width: 40%;
-  height: 50px;
-  position: absolute;
-  background-color: #5aa669;
+  width: 69%}
 }
-@keyframes Animate-XML {
-  from {
-  width: 10px;
-}
-to {
-  width: 40%}
-}@-webkit-keyframes Animate-XML {
-  from {
-  width: 10px;
-}
-to {
-  width: 40%}
-}@-moz-keyframes Animate-XML {
-  from {
-  width: 10px;
-}
-to {
-  width: 40%}
-}@-o-keyframes Animate-XML {
-  from {
-  width: 10px;
-}
-to {
-  width: 40%}
-}#Skill-C {
+#Skill-C {
   animation: Animate-C 4s;
   -webkit-animation: Animate-C 4s;
   -moz-animation: Animate-C 4s;
   -o-animation: Animate-C 4s;
-  width: 65%;
+  width: 69%;
   height: 50px;
   position: absolute;
   background-color: rgba(248, 155, 119, 0.959);
@@ -408,26 +375,27 @@ to {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-webkit-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-moz-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
+  width: 69%}
 }@-o-keyframes Animate-C {
   from {
   width: 10px;
 }
 to {
-  width: 65%}
-}#Skill-JAVA {
+  width: 69%}
+}
+#Skill-JAVA {
   animation: Animate-JAVA 4s;
   -webkit-animation: Animate-JAVA 4s;
   -moz-animation: Animate-JAVA 4s;
