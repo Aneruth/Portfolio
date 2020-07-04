@@ -859,12 +859,12 @@ a {
 	padding:5px 10px;
 	font-size: 12px;
 	letter-spacing:1px;
-	background:#ff0000;
+	background:#a74545;
 	height:40px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	color:#FFF;
-	border:2px solid #ff0000;
+	border:2px solid #000000;
   -webkit-transition:all .1s ease-in-out;
 	-moz-transition:all .1s ease-in-out;
 	-ms-transition:all .1s ease-in-out;
