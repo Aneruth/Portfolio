@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@500&display=swap");
 html {
   height: 100%;
-  font-family: 'Montserrat';
+  font-family: 'Courier New', Courier, monospace;
   --bg: #FCFCFC;
   --bg-panel: #EBEBEB;
   --color-headings: rgb(0, 0, 0);
@@ -46,12 +46,12 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 32px;
   color: var(--color-headings);
   padding: 30px;
   line-height: 200%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 200px;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -677,7 +677,10 @@ a {
 #loader {
     position:fixed;
     width:100%;
-    left:0;right:0;top:0;bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
     background-color: rgb(0, 0, 0);
     z-index:9999;
 }
@@ -688,13 +691,21 @@ a {
 @keyframes spin {
 	to {-webkit-transform:rotate(360deg);}
 }
-
+.load{
+  font-size: 2.2rem;
+  color: rgb(245, 245, 245);
+  display: flex;
+  padding-left: 830px;
+  margin-top: 470px;
+}
 #loader::after {
   content:'';
   display:block;
   position:absolute;
-  left:48%;top:40%;
-  width:50px;height:50px;
+  left:48%;
+  top:40%;
+  width:50px;
+  height:50px;
   border-style: groove;
   border-color:rgb(255, 0, 0);
   border-top-color: ivory;
@@ -710,19 +721,31 @@ a {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 2s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from { 
+    bottom:-100px; 
+    opacity:0; 
+  } 
+  to {
+     bottom:0px; 
+     opacity:1;
+   }
 }
 
 @keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+  from{ 
+    bottom:-100px; 
+    opacity:0; 
+  } 
+  to{ 
+    bottom:0; 
+    opacity:1; 
+  }
 }
 
 /* Location, Phone, Email Section */
@@ -739,7 +762,7 @@ a {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 18px 'Courier New', Courier, monospace;
   letter-spacing: 1.9px;
   color: var(--color-headings);
 }
@@ -788,12 +811,74 @@ a {
 }
 }
 
-@media screen and (max-width: 569px) {
-.form-wrapper {
-  float: none;
-  margin: 0 auto;
-}  
-.form-control, textarea {
-  max-width: 340px;
-  margin: 0 auto;
+/* Contact form */
+#contact 
+{
+  width:100%; 
+  height:100%; 
+  margin: 0 auto; 
+  background: var(--bg); 
+}
+
+.container {
+  width:960px; 
+  height:auto; 
+  margin: 0 auto; 
+  padding: 50px 0;
+}
+
+#contact .container form input,
+#contact .container form textarea {
+	width:100%;
+	height:30px;
+	padding:5px 10px;
+	font-size: 12px;
+	color:rgb(173, 161, 161);
+	letter-spacing:1px;
+	background: #FFF;
+	border:2px solid #FFF;
+	margin-bottom:25px;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:2px solid #dd4545;
+  color:#999;
+}
+
+#contact .container form textarea {
+  height:200px;
+}
+
+#contact .container form .submit {
+	width:100%;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:#ff0000;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+	border:2px solid #ff0000;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+}
+
+#contact .container form .submit:hover {
+	color:#FFF;
+	border:2px solid #ff0000;
+	background: #ff0000;
+  cursor:pointer;
+}
+
+#contact .container form .required {
+  color:#b43838;
 }

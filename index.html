@@ -11,7 +11,9 @@
 </head>
 <body oncontextmenu="return true" onkeydown="return true;" onmousedown="return true;">
 		<body onload="myFunction()" style="margin:0;">
-			<div id="loader"></div>
+			<div id="loader">
+				<h1 class="load"> Loading... </h1>
+			</div>
 	
 <div id="fullDiv" style="justify-content: initial; display: none;" class="animate-bottom">			
 	<div class="tooltip"><span class="tooltiptext" style="margin-left: 1600px;top: 9px;">Slide me to turn on/off Dark Mode</span>
@@ -174,12 +176,24 @@
 		  </div>
 
 		  <!-- Contact Section -->
-		 
-			<!---------------- 
-	  
-			CONTACT PAGE RIGHT 
-		  
-			-----------------> 
+		  <section id="contact">
+  
+			<div class="container">
+			
+			<form name="htmlform" method="post">
+			
+			<input type="text" name="first_name" placeholder="NAME" required>
+			  
+			<input  type="email" name="email" placeholder="MAIL" required>
+			  
+			<textarea name="comments" placeholder="MESSAGE" required ></textarea>
+			  
+			<button name="send" type="submit" class="submit">SEND</button>
+			  
+			</form>
+			 
+			  </div>
+			  </section>
 		  
 			<div class="direct-contact-container" style="margin-top: 200px;">
 	  
@@ -189,6 +203,8 @@
 		</div>
 		  
 		</div>
+		
+
 <div class="flex-center">
     <a href="https://github.com/Aneruth" class="fa fa-github fa-4x icon-3d"></a>
     <a href="https://www.linkedin.com/in/aneruth-mohanasundaram-01352713b/" class="fa fa-linkedin fa-4x icon-3d"></a>
@@ -197,7 +213,7 @@
  <footer class="copyright" style="padding-left: 35px;">&copy; Aneruth Mohanasundaram</footer> 
 </div>
  <script>
-	 function arunDaniel(){
+	 function aneruth(){
 		if(sessionStorage.getItem("theme")=="dark"){
 			document.documentElement.setAttribute('data-theme', 'dark');
 		}		
@@ -234,7 +250,7 @@ var myVar;
 function myFunction() {
   myVar = setTimeout(showPage, 2500);
 
-  arunDaniel();
+  aneruth();
 }
 
 function showPage() {
@@ -243,24 +259,24 @@ function showPage() {
 }
 // Inspecting turned off 
 
-// $(document).keydown(function(e){
-//         if(e.which === 123){
-//            return false;
-//         }
-//     });
-// 	var currentHtmlContent;
-// var element = new Image();
-// var elementWithHiddenContent = document.querySelector(".body");
-// var innerHtml = elementWithHiddenContent.innerHTML;
-// element.__defineGetter__("id", function() {
-//     currentHtmlContent= "";
-// });
-// setInterval(function() {
-//     currentHtmlContent= innerHtml;
-//     console.log(element);
-//     console.clear(); 
-//     elementWithHiddenContent.innerHTML = currentHtmlContent;
-// }, 1000);	
+$(document).keydown(function(e){
+        if(e.which === 123){
+           return false;
+        }
+    });
+	var currentHtmlContent;
+var element = new Image();
+var elementWithHiddenContent = document.querySelector(".body");
+var innerHtml = elementWithHiddenContent.innerHTML;
+element.__defineGetter__("id", function() {
+    currentHtmlContent= "";
+});
+setInterval(function() {
+    currentHtmlContent= innerHtml;
+    console.log(element);
+    console.clear(); 
+    elementWithHiddenContent.innerHTML = currentHtmlContent;
+}, 1000);	
 </script>
 </body>
 </html>
