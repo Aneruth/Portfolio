@@ -46,11 +46,13 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 35px;
   color: var(--color-headings);
   padding: 30px;
+  line-height: 200%;
   margin-top: 50px;
-  font-family: fantasy;
+  margin-bottom: 50px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
  p {
@@ -591,6 +593,7 @@ to {
   display: inline-flex;
   height: 40px;
   width: 100px;
+  border-radius: 50px;
   border: 2px solid rgb(0, 0, 0);
   margin: 20px 20px 20px 20px;
   color: #BFC0C0;
@@ -678,14 +681,11 @@ a {
     background-color: rgb(0, 0, 0);
     z-index:9999;
 }
-
 @-webkit-keyframes spin {
-	/* from {-webkit-transform:rotate(0deg);} */
 	to {-webkit-transform:rotate(360deg);}
 }
 
 @keyframes spin {
-	/* from {transform:rotate(0deg);} */
 	to {-webkit-transform:rotate(360deg);}
 }
 
@@ -796,10 +796,4 @@ a {
 .form-control, textarea {
   max-width: 340px;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
-  }
 }
